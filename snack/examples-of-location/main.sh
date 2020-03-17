@@ -10,6 +10,7 @@ script_path="${BASH_SOURCE[0]}"; echo "script_path = $script_path" # as paramete
 script_folder_path="$(cd "$(dirname "$0")";pwd)"; echo "script_folder_path = $script_folder_path"
 script_folder_path="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"; echo "script_folder_path = $script_folder_path"
 script_folder=${script_folder_path##*/}; echo "script_folder = $script_folder" # use string function
+script_parent_folder_path=${script_folder_path%/*}; echo "script_parent_folder_path = $script_parent_folder_path" # use string function
 echo ""
 # pwd, dirname
 execution_folder_path=$(cd "$(dirname "$BASH_FOLDER")";pwd); echo "execution_folder_path = $execution_folder_path" # where you execute the bash
