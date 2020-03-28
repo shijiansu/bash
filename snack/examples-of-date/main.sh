@@ -23,3 +23,14 @@ date "+%s"
 # date +%U	Displays week number of year, with Sunday as first day of week (00..53)	05
 # date +%Y	Displays full year i.e. YYYY	2013
 # date +%Z	alphabetic time zone abbreviation (e.g., EDT)	IS
+
+# different date format in Linux and Max
+os=$(uname -s)
+if [[ "$os" == "Linux" ]]; then # Linux
+    date +%Y-%m-%d --date='-1 day -1 year'
+elif [[ "$os" == "Darwin" ]]; then # Mac
+    date -v-1d -v-1y +%Y-%m-%d
+else
+    echo "unknown OS"
+    exit 1
+fi
