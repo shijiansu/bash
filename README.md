@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/language-shell-blue)
 ![](https://img.shields.io/badge/technology-shell,%20bash-blue)
 ![](https://img.shields.io/badge/development%20year-2020-orange)
-![](https://img.shields.io/badge/contributor-shijiansu-purple)
+![](https://img.shields.io/badge/contributor-shijian%20su-purple)
 ![](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ![](https://img.shields.io/github/languages/top/shijiansu/core-bash)
