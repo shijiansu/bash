@@ -26,11 +26,12 @@ date "+%s"
 
 # different date format in Linux and Max
 os=$(uname -s)
-if [[ "$os" == "Linux" ]]; then # Linux
-    date +%Y-%m-%d --date='-1 day -1 year'
-elif [[ "$os" == "Darwin" ]]; then # Mac
-    date -v-1d -v-1y +%Y-%m-%d
+echo "The operation system is: ${os}"
+if [[ "${os}" == "Linux" ]]; then # Linux
+  date +%Y-%m-%d --date='-1 day -1 year'
+elif [[ "${os}" == "Darwin" ]]; then # Mac
+  date -v-1d -v-1y +%Y-%m-%d
 else
-    echo "unknown OS"
-    exit 1
+  echo "unknown OS"
+  exit 1
 fi
