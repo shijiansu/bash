@@ -1,6 +1,6 @@
 #!/bin/bash
-https://blog.csdn.net/edwzhang/article/details/53332900
 
+https://blog.csdn.net/edwzhang/article/details/53332900
 
 foo=1:2:3:4:5
 echo ${foo##*:}

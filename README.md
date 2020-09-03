@@ -9,6 +9,7 @@
 ![](https://img.shields.io/github/languages/code-size/shijiansu/core-bash)
 ![](https://img.shields.io/github/repo-size/shijiansu/core-bash)
 ![](https://img.shields.io/github/last-commit/shijiansu/core-bash?color=red)
+![](https://github.com/shijiansu/core-bash/workflows/ci%20build/badge.svg)
 
 --------------------------------------------------------------------------------
 

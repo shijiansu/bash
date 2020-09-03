@@ -1,6 +1,5 @@
-
 #!/bin/bash
- 
+
 while getopts "a:b:cdef" opt; do
   case $opt in
     a)
