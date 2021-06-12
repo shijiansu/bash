@@ -17,27 +17,27 @@
 # 1
 
 /bin/bash test/fews.sh
-# $\{var}:
+# ${var}:
 # Substitute the value of var.
-# $\{var:-word}: word
+# ${var:-word}: word
 # If var is null or unset, word is substituted for var. The value of var does not change.
-# $\{var:=word}: word
+# ${var:=word}: word
 # If var is null or unset, var is set to the value of word.
-# $\{var:?message}: word
+# ${var:?message}: word
 # If var is null or unset, message is printed to standard error. This checks that variables are set correctly.
-# $\{var:+word}: word # 无论var是不是有设置, 这个都是被替换
+# ${var:+word}: word # 无论var是不是有设置, 这个都是被替换
 # If var is set, word is substituted for var. The value of var does not change.
 
 export var="Hello"
 /bin/bash test/fews.sh
 unset var
-# $\{var}: Hello
+# ${var}: Hello
 # Substitute the value of var.
-# $\{var:-word}: Hello
+# ${var:-word}: Hello
 # If var is null or unset, word is substituted for var. The value of var does not change.
-# $\{var:=word}: Hello # 尝试打印var, 但是仍是Hello值, 不是word
+# ${var:=word}: Hello # 尝试打印var, 但是仍是Hello值, 不是word
 # If var is null or unset, var is set to the value of word.
-# $\{var:?message}: Hello
+# ${var:?message}: Hello
 # If var is null or unset, message is printed to standard error. This checks that variables are set correctly.
-# $\{var:+word}: word
+# ${var:+word}: word
 # If var is set, word is substituted for var. The value of var does not change.

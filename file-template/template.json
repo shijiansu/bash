@@ -1,0 +1,3 @@
+{
+    "hello": "${TEMPLATE_VAR_1}"
+}
