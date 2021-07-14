@@ -20,7 +20,7 @@
 /bin/bash example.sh without-first-colon.sh -a
 # 没输出
 
-# 当optstring以":"开头时, getopts会区分invalid option错误和miss option argument错误.
-# invalid option时, varname会被设成?, $OPTARG是出问题的option； 
-# miss option argument时, varname会被设成:, $OPTARG是出问题的option.  
-# 如果optstring不以":"开头, invalid option错误和miss option argument错误都会使varname被设成?, $OPTARG是出问题的option.
+# 当optstring以":"开头时, getopts会区分invalid option错误和miss option argument错误
+# invalid option时, var name会被设成?, $OPTARG 是出问题的 option
+# miss option argument时, var name会被设成:, $OPTARG 是出问题的 option
+# 如果opt string不以":"开头, invalid option错误和miss option argument错误都会使var name被设成?, $OPTARG是出问题的option
